@@ -8,6 +8,16 @@ ctx.fillRect(0, 0, canvas.width, canvas.height);
 var mX = canvas.width / 2;
 var mY = canvas.height / 2;
 onmousemove = function(e){mX=e.clientX;mY=e.clientY;}
+const src = document.getElementById("source");
+src.addEventListener(
+  "touchstart",
+  (e) => {
+    // Cache the client X/Y coordinates
+    mX = e.touches[0].clientX;
+    mY = e.touches[0].clientY;
+  },
+  false
+);
 
 var pixels = [];
 for (let i = 0; i < 200; i++) {
