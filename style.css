@@ -1,14 +1,25 @@
 body {
     color: #dddddd;
-    background-color: #222;
+    background-color: rgba(34, 34, 34, 0);
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 h1 {
     text-align: center;
 }
 
+canvas { display:block; }
+
+.overCanvasDiv {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
 .TitleDiv {
     border: 2px solid #777;
+    background-color: rgba(0, 0, 0, 0.555);
     width: 400px;
     margin: auto;
     padding: 10px;
